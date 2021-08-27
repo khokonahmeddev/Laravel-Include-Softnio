@@ -60,4 +60,8 @@ of
 
 `.env file`
 
+## Note
+
+My development server is Laravel Valet. The path of css and js may be a problem on your server
+You can use the modules of this project
 
