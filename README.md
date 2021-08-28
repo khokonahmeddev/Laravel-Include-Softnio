@@ -6,6 +6,22 @@ Email: `khokonahmed.8282@gmail.com`
 
 ## Use Case
 
+## Note 
+
+If you want to clone and use this project .To you
+`composer install` and `.env`  
+
+Create the database and remember these things for future usage
+`Database Name`
+`Username` `Password`
+
+## Only module use
+
+And if you want to use the module in any other project, you need to follow the command below 
+
+# Modules name space 
+`app\Modules`
+
 ## Provider Register
 
 First, include the last line in the app.php provider with the help of config
@@ -56,12 +72,21 @@ There is no need for the default model migration of Laravel. Delete it to make y
 of
 `npm run watch`
 
-## Database setup
+## Database setup & email setup
 
-`.env file`
+`.env` file
+
 
 ## Note
 
 My development server is Laravel Valet. The path of css and js may be a problem on your server
 You can use the modules of this project
+
+If Session store not set on request
+Then you need to register the kernel 
+
+Up to HandleCors
+`protected $middleware = [
+`\Illuminate\Session\Middleware\StartSession::class,`
+]`
 
