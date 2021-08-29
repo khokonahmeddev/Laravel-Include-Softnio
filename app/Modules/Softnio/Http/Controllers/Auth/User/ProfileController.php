@@ -4,8 +4,9 @@ namespace App\Modules\Softnio\Http\Controllers\Auth\User;
 
 use App\Modules\Softnio\Http\Requests\User\UserProfileRequest as Request;
 use App\Modules\Softnio\Services\Profile\UserProfileService;
+use App\Http\Controllers\Controller;
 
-class ProfileController
+class ProfileController extends Controller
 {
     protected $service;
 
